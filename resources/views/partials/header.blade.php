@@ -1,12 +1,12 @@
 <header>
-    <nav class="navbar navbar-expand-lg  bg-primary ">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-light py-3">
         <div class="container">
             <h1><a class="navbar-brand text-white fs-3" href="#">EdiBlog</a></h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content"
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar-content">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item  bolder">
                         <a class="nav-link  text-white {{ $title == 'HOME' ? 'fw-bold' : '' }} bloder"

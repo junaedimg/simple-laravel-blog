@@ -43,9 +43,9 @@
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
                     <p>
-                        Here you can use rows and columns to organize your footer
-                        content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ad voluptatum debitis ea
+                        laborum, ipsa dolorum nihil accusamus explicabo omnis maxime, vitae magnam dignissimos hic
+                        veniam dolor id fuga maiores!
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -57,16 +57,16 @@
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
                     <p>
-                        <a href="#!" class="text-white">MDBootstrap</a>
+                        <a href="#!" class="text-white">Product A</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">MDWordPress</a>
+                        <a href="#!" class="text-white">Product B</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">BrandFlow</a>
+                        <a href="#!" class="text-white">Product C</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-white">Bootstrap Angular</a>
+                        <a href="#!" class="text-white">Product D</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -98,10 +98,10 @@
                     <h6 class="text-uppercase fw-bold">Contact</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                    <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                    <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    <p><i class="fas fa-home mr-3"></i> Bekasi Jawa Barat</p>
+                    <p><i class="fas fa-envelope mr-3"></i> jmg290601@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> 089517------</p>
+                    <p><i class="fas fa-print mr-3"></i> 089517------</p>
                 </div>
                 <!-- Grid column -->
             </div>
