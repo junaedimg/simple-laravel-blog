@@ -3,22 +3,37 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
- 
+use App\Models\Category;
+use App\Models\User;
+
 class PostController extends Controller
 {
     public function index()
     {
-        return view('blog', [
-            'title' => "BLOG",
-            'posts' =>  Post::with(['user', 'category'])->get()
+        $title = '';
+        if (request('category')) {
+            $category = Category::firstWhere('slug', request('category'));
+            $title = ' in ' . $category->name;
+        }
+
+        if (request('author')) {
+            $author = User::firstWhere('username', request('author'));
+            $title = ' by ' . $author->name;
+        }
+
+        return view('posts', [
+            "title" => "All Posts" . $title,
+            "active" => 'BLOG',
+            "posts" => Post::latest()->filter(request(['search', 'category', 'author']))->paginate(6)->withQueryString()
         ]);
     }
 
-    public function post(Post $post)
+    public function show(Post $post)
     {
         return view('post', [
-            'title' => "POST",
-            'post' => $post,
+            "title" => "Single Post",
+            "active" => 'posts',
+            "post" => $post
         ]);
     }
 }

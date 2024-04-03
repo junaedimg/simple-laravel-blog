@@ -23,7 +23,9 @@ class postFactory extends Factory
             'user_id' => rand(1, 5),
             'category_id' => rand(1, 5),
             'excerpt' => fake()->sentence(20),
-            'body' => fake()->paragraph(50)
+            'body' => collect($this->faker->paragraphs(mt_rand(5, 10)))
+                ->map(fn ($p) => "<p>$p</p>")
+                ->implode(''),
         ];
     }
 }

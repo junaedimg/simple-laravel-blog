@@ -15,10 +15,7 @@ class CategoryFactory extends Factory
      * @return array<string, mixed>
      */
 
-    // Category::create([
-    //     'name' => 'web design',
-    //     'slug' => 'web-design'
-    // ]);
+
 
     public function definition(): array
     {
