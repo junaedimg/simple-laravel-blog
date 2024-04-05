@@ -24,6 +24,15 @@
                             href="/categories">Categories</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="/login"
+                            class="nav-link nav-link text-white {{ $active == 'LOGIN' ? 'fw-bold' : '' }}">
+                            Login
+                            <i class="bi bi-box-arrow-in-right"></i>
+                        </a>
+                    </li>
+                </ul>
                 <form class="d-flex" role="search" method="GET" action="/blog">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                         name="search" value="{{ request('search') }}">
